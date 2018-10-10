@@ -9,21 +9,34 @@ class App extends Component {
   constructor(props){
     super(props);
     console.log('[App.js] Inside Contractor', props);
+    this.state = {
+      persons: [
+        {id: "sdfsd1", name: "Max", age: 28},
+        {id: "sdfsf1", name: "Manu", age: 29},
+        {id: "fcvdf1", name: "Stephanie", age: 26}
+      ],
+      otherState: "other state value",
+      showPersons: false
+    }
   }
 
   componentWillMount(){
     console.log('[App.js] Inside componentWillMount()');
   }
 
-  state = {
-    persons: [
-      {id: "sdfsd1", name: "Max", age: 28},
-      {id: "sdfsf1", name: "Manu", age: 29},
-      {id: "fcvdf1", name: "Stephanie", age: 26}
-    ],
-    otherState: "other state value",
-    showPersons: false
+  componentDidMount(){
+    console.log('[App.js] Inside componentDidMount()');
   }
+
+  // state = {
+  //   persons: [
+  //     {id: "sdfsd1", name: "Max", age: 28},
+  //     {id: "sdfsf1", name: "Manu", age: 29},
+  //     {id: "fcvdf1", name: "Stephanie", age: 26}
+  //   ],
+  //   otherState: "other state value",
+  //   showPersons: false
+  // }
 
   switchNameHandler = (newName) =>{
     console.log('Was clicked!');
@@ -75,6 +88,7 @@ class App extends Component {
   }
 
   render() {
+    console.log('[App.js] Inside render()');
 
     let persons = null;
 
