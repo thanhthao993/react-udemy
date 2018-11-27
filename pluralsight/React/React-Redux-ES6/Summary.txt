@@ -1,0 +1,18 @@
+Dev environment, complete!
+- Babel
+- Webpack
+- ESLint
+- Mocha
+- Express
+- npm Scripts
+- One Command!
+
+Next up: React Component Approaches
+
+Next up: Initial App Structure
+
+Foundation, complete!
+Create React components
+Setup React Router
+
+Next up: Let's explore Redux!
