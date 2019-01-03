@@ -18,6 +18,7 @@ class ManageCoursePage extends React.Component{
         this.saveCourse = this.saveCourse.bind(this);
     }
 
+    // This React lifecycle function is called anytime that props have changed
     componentWillReceiveProps(nextProps){
         if(this.props.course.id != nextProps.course.id){
             // Necessary to populate form when existing course is loaded directly.
